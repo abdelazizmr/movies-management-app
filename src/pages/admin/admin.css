@@ -1,0 +1,68 @@
+.header {
+  background-color: #ddd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  color: black;
+
+}
+
+
+.admin-sidebar {
+  width: 200px;
+  height: 100%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.admin-sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  background-color: #ddd;
+
+}
+
+.admin-sidebar a:hover {
+  background-color: #ddd;
+  color: #000;
+  font-weight: bold;
+}
+
+.admin-sidebar a:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.admin-sidebar a:last-child {
+  border-bottom: none;
+}
+
+.admin-sidebar a.active {
+  background-color: #ddd;
+  color: #000;
+}
+
+.admin-sidebar a:focus {
+  background-color: #ddd;
+  color: #000;
+}
+
+
+.users{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.users-table td ,thead{
+    text-align: center;
+}
