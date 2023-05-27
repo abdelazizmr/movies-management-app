@@ -29,25 +29,31 @@ const  SpecificMovie = () => {
 
 
   return (
-    <div className="movie-info">
-      <div className='p-5 d-flex justify-content-start'>
-        <Link to="/"> ◀ Go back </Link>
-      </div>
-      <img className="movie-poster" src={img} alt="The Shawshank Redemption Poster" />
-      <h1 className="movie-title">{movie?.Title}</h1>
-      <div className="movie-rating">{movie?.Rating}</div>
-      <div className="movie-details">
-        <div className="movie-detail-label">Duration:</div>
-        <div className="movie-detail-value">{movie?.Duration}</div>
-        <div className="movie-detail-label">Release Date:</div>
-        <div className="movie-detail-value">{movie?.ReleaseDate}</div>
-        <div className="movie-detail-label">Country:</div>
-        <div className="movie-detail-value">{movie?.Country}</div>
-      </div>
-      <div className="movie-synopsis">
-        {movie?.Synopsis}
-      </div>
+    <>
+    <div className="navbar">
+    <ul className="navbar-list">
+      <li className="navbar-item">
+        <a href="/">◀ Go back</a>
+      </li>
+    </ul>
     </div>
+
+  <div className="movie-info">
+    <h1 className="movie-title">{movie?.Title}</h1>
+    <img className="movie-poster" src={img} alt="The Shawshank Redemption Poster" />
+    
+    <div className="movie-rating">{movie?.Rating}</div>
+    <div className="movie-details">
+      <div className="movie-detail-label">Duration:</div>
+      <div className="movie-detail-value">{movie?.Duration}</div>
+      <div className="movie-detail-label">Release Date:</div>
+      <div className="movie-detail-value">{movie?.ReleaseDate}</div>
+      <div className="movie-detail-label">Country:</div>
+      <div className="movie-detail-value">{movie?.Country}</div>
+    </div>
+    <div className="movie-synopsis">{movie?.Synopsis}</div>
+  </div>
+</>
   );
 }
 

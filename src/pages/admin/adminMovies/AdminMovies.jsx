@@ -28,7 +28,6 @@ const AdminMovies = () => {
     if (confirm("Are you sure you want to delete this user ?")){
  
       dispatch(deleteMovie(id))
-
       return
 
     }

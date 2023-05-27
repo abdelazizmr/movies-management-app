@@ -239,6 +239,16 @@
       "Country": "USA",
       "Title": "Paranormal Activity: Next of Kin",
       "Synopsis": "Margot, a documentary filmmaker, heads to a secluded Amish community in the hopes of learning about her long-lost mother and extended family. Following a string of strange occurrences and discoveries, she comes to realize this community may not be what it seems."
+    },
+    {
+      "id": 1684078845997,
+      "Title": "casanegra",
+      "Synopsis": "Casanegra is a 2008 Moroccan drama film directed by Nour-Eddine Lakhmari. It was nominated by Morocco to compete for the Academy Award for Best International Feature Film at the 82nd Academy Awards",
+      "Duration": "120",
+      "ReleaseDate": "",
+      "Rating": "7.1",
+      "Country": "morocco",
+      "Image": "https://m.media-amazon.com/images/M/MV5BZGIxNzcxZTUtN2FlYS00MTA1LTk1OWItYmUzYTUwMzFjZjIxXkEyXkFqcGdeQXVyNjk1MzU2OTQ@._V1_.jpg"
     }
   ],
   "users": [
@@ -276,11 +286,6 @@
       "id": 7,
       "username": "user7",
       "password": "pass7"
-    },
-    {
-      "username": "user8",
-      "password": "pass9",
-      "id": 9
     },
     {
       "id": 10,

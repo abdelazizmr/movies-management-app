@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import { fetchMovies } from '../../store/moviesSlice'
 import Pagination from "./Pagination"
 import { Link } from 'react-router-dom'
+import Spinner from '../../components/Spinner'
 
 const Movies = () => {
 
@@ -29,13 +30,16 @@ const Movies = () => {
   return (
     <>
       <div className='m-3 d-flex justify-content-end'>
-        <Link to="/login">Go admin</Link>
+        <Link to="/login">Go admin dashboard</Link>
       </div>
-      <div className='d-flex justify-content-center gap-5 m-5 home-container'>
+      <div className='d-flex justify-content-center gap-5 m-2 home-container'>
         <Filters />
         
-        <div className='w-70'>
+        <div>
+          {movies ? 
           <Pagination movies={movies} />
+          : <Spinner />
+          }
         </div>
 
       </div>

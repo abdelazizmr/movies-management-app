@@ -36,7 +36,7 @@ const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (username && password){
-      const user = users.find(user=> user.username === username && user.password === password)
+      const user = users.find(user => user.username === username && user.password === password)
       if (user){
         navigate('/admin')
       }else{
